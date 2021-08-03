@@ -1,0 +1,362 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--
+	<meta property="og:type" content="website" />
+    <meta property="og:url" content="[[++site_url]]" />
+    <meta property="og:title" content="[[*longtitle]]" />
+    <meta property="og:description" content="[[*description]]" />
+    <meta property="og:image" content="/templates/vardom/images/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="[[*longtitle]]" />
+    <meta name="twitter:image:src" content="/templates/vardom/images/logo.png" />
+    <meta name="twitter:description" content="[[*description]]" />
+    <link rel="image_src" href="/templates/vardom/images/logo.png" />
+	
+	<base href="[[!++site_url]]">-->
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Подбор персонала</title>
+	
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- Favicons -->	
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">	<!--IE browser-->
+	<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">				<!--normal browsers-->
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/slimbox2.css" />
+	<!--<link rel="stylesheet" href="css/animate.css">-->
+	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+
+</head>
+<body>
+<div id="wrapper">
+	
+	<header role="banner" class="container-fluid">
+	
+		<div id="top" class="row">
+			
+			<div id="logo-block" class="col-xs-6 col-sm-2 col-md-4 col-lg-4">
+				<a href="/"><img src="images/logo.png" alt="Arteks" class="img-responsive"></a>
+				<p>Агентство домашнего персонала</p>
+			</div>
+			
+			<div id="select-personal" class="hidden-xs col-sm-6 col-md-4 col-lg-4"> 
+				<select class="form-control" onchange="document.location=this.options[this.selectedIndex].value">
+					<option value="#" hidden>Подобрать персонал</option>
+					<option value="#">Няни и гувернантки</option>
+					<option value="#">Домработница</option>
+					<option value="#">Повар</option>
+					<option value="#">Водитель</option>
+					<option value="#">Сиделка</option>
+					<option value="#">Персонал в загородный дом</option>
+					<option value="#">Персонал за границу</option>
+					<option value="#">Полезная информация</option>
+				</select>
+			</div>
+
+			<div id="top-contacts" class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+				<ul class="hidden-xs">					
+					<li id="phone-img"><img src="images/phone-icon.png" alt="phone" class="img-responsive"></li>
+					<li id="phones">8 (812) 640-78-28<br> 8 (812) 210-04-44</li>
+					<li id="sqew-line"><img src="images/sqew-line.png" alt="sqew-line" class="img-responsive"></li>
+					<li id="callback-top"><a href="#">Обратный звонок</a></li>
+				</ul>
+				
+				<a href="tel:+79000000000" id="call-button-on-top-mobile" class="visible-xs"><span class="glyphicon glyphicon-earphone"> </span> Позвонить</a>
+			</div>
+		</div>
+					
+		<nav role="navigation" id="main-menu">
+			<ul>
+				<li><a href="/cources">Обучение персонала</a></li>
+				<li><a href="personal.html">Подбор персонала</a></li>
+				<li><a href="/resume">Соискателям</a></li>
+			</ul>
+			<img id="left-shadow" src="images/bg-main-menu-left-shadow.png" alt="left-shadow" class="img-responsive hidden-xs hidden-sm">
+			<img id="right-shadow" src="images/bg-main-menu-right-shadow.png" alt="right-shadow" class="img-responsive hidden-xs hidden-sm">
+		</nav>
+		
+		<div id="block-under-main-menu" class="row">
+		
+			<nav id="second-menu">
+				<ul>
+					<li><a href="/about">О компании</a></li>
+					<li><a href="/news">Новости</a></li>
+					<li><a href="/contacts">Контакты</a></li>
+					<li><a href="/references">Отзывы</a></li>
+				</ul>
+			</nav>
+			
+			<form id="search-form" class="form-inline" role="form">
+				
+				<div class="input-group">
+					
+					<input type="text" class="form-control" id="search-field" placeholder="Найти на сайте">
+					
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+					</span>
+					
+				</div>
+				
+			</form>
+			
+		</div>
+
+	</header>
+		
+	<main role="main">
+	
+	<div class="main-bg">
+	
+		<section id="slider">
+			<img src="images/personal-bg.png" alt="personal-bg" class="img-responsive">
+			
+			<nav id="personal-block">
+				
+				<ul>
+					<li>
+						<a href="#"><img src="images/personal-pict-1.png" alt="Няни и гувернантки" class="img-responsive"><span>Няни и<br> гувернантки</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/personal-pict-2.png" alt="Домработница" class="img-responsive"><span>Домработница</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/personal-pict-3.png" alt="Повар" class="img-responsive"><span>Повар</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/personal-pict-4.png" alt="Водитель" class="img-responsive"><span>Водитель</span></a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#"><img src="images/personal-pict-5.png" alt="Сиделка" class="img-responsive"><span>Сиделка</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/personal-pict-6.png" alt="Персонал в загородный дом" class="img-responsive"><span>Персонал в<br> загородный дом</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/personal-pict-7.png" alt="Персонал за границу" class="img-responsive"><span>Персонал<br> за границу</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/personal-pict-8.png" alt="Полезная информация" class="img-responsive"><span>Полезная<br> информация</span></a>
+					</li>
+				</ul>
+			</nav>
+			
+		</section>
+	
+		<div class="main-bg-paper">
+		
+			<div class="row">
+			
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 relative-block">
+					<section class="content-block margin-top-block">
+						<h2 style="font-size:1.5em;">Подбор домашнего персонала в Петербурге</h2>
+						<div class="content-align-center">
+							<p>Компания «Артекс» уже 14 лет подбирает качественный домашний персонал в Петербурге, Москве и других регионах России. </p>
+							<p>Мы гордимся, что наш персонал работает в домах известных деятелей культуры и искусств, политики и спорта! </p>
+							<p>Подбор домашнего персонала осуществляется по следующим специализациям:</p>
+							<p>няни и гувернантки, домработницы, повара, водители, сиделки, персонал для работы в загородном доме, персонал за границу.</p>
+						</div>
+						
+						<div class="four-angle-ornament">
+							<img class="top-left-ornament img-responsive" src="images/block-angle-left-top.png" alt="block-angle-left-top">
+							<img class="bottom-left-ornament img-responsive" src="images/block-angle-left-bottom.png" alt="block-angle-left-bottom">
+							<img class="top-right-ornament img-responsive" src="images/block-angle-right-top.png" alt="block-angle-right-top">
+							<img class="bottom-right-ornament img-responsive" src="images/block-angle-right-bottom.png" alt="block-angle-right-bottom">
+							
+							<img class="bottom-center-ornament hidden-xs img-responsive" src="images/block-angle-bottom-center.png" alt="block-angle-bottom-center">
+						</div>
+						
+					</section>
+				</div>
+				
+				
+				
+				<aside class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+					<div id="otzivi" class="row">
+						
+						<section class="otziv">
+							<div class="otziv-block row">						
+								<img src="images/otziv-shnurov.png" alt="shnurov" class="img-responsive col-xs-2 col-sm-3 col-md-3 col-lg-3">
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<h4>Сергей Шнуров</h4>
+									<p>Спасибо за качественный и быстрый подбор семейного водителя</p>
+								</div>						
+							</div>
+						</section>
+						
+						<section class="otziv">
+							<div class="otziv-block row">
+								<img src="images/otziv-sushinskiy.png" alt="sushinskiy" class="img-responsive col-xs-2 col-sm-3 col-md-3 col-lg-3">
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<h4>Максим Сушинский</h4>
+									<p>Я доволен работой "Артекса"! Очень милые девушки и при этом...</p>
+								</div>
+							</div>
+						</section>
+						
+						<section class="otziv">
+							<div class="otziv-block row">
+								<img src="images/otziv-malofeev.png" alt="malofeev" class="img-responsive col-xs-2 col-sm-3 col-md-3 col-lg-3">
+								<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+									<h4>Малофеев Вячеслав</h4>
+									<p>Спасибо компании "Артекс Групп" за проделанную работу подбора...</p>
+								</div>
+							</div>
+						</section>
+						
+						<a id="more-otzivi" href="/otzivi">Еще отзывы...</a>
+						
+					</div>
+				</aside>
+			
+			</div>
+			
+			<section class="content-block relative-block margin-top-block">	
+					<h1>Домашний персонал от "Артекс"</h1>
+					<ul class="content-block-list">
+						<li>
+							<strong>Няня и гувернатка.</strong> Специалисты нашего агентства осуществляют поиск няни грудничку, няни для новорожденного и гувернанток, ориентируясь на потребности ребенка определенной возрастной группы. Все няни от нашей компании подбора домашнего персонала СПб хорошо знают детскую психологию, добрые, заботливые и любящие детей. Няня найдет баланс между желаниями родителей, детей и задачами воспитания на данном этапе взросления ребенка. Благодаря обширной базе наше агентство по подбору нянь подберет няню с нужным для Вас графиком.
+							<img src="images/uzor-1.png" alt="uzor-1-1" class="img-responsive">
+						</li>
+						<li>
+							<strong>Домработница.</strong> Наша компания по подбору домашнего персонала в Санкт-Петербурге предоставит домработницу, соответствующую всем Вашим требованиям. Стоимость услуг домработницы зависит от выдвигаемых требований, функциональных обязанностей и занятости. Самые популярные специализации домработниц в Санкт-Петербурге: домработница раз в неделю, домработница с проживанием, сиделка домработница, домработница в загородный дом, домработница приходящая, VIP домработница.
+							<img src="images/uzor-1.png" alt="uzor-1-2" class="img-responsive">
+						</li>
+						<li>
+							<strong>Повар в семью.</strong> Компания «Артекс» подберет Вам профессионального повара на дом, который будет радовать Вас и Ваших близких настоящими произведениями кулинарного искусства. Наши повара знают множество рецептов, в том числе национальных блюд разных народов мира.
+							<img src="images/uzor-1.png" alt="uzor-1-3" class="img-responsive">
+						</li>
+						<li>
+							<strong>Водитель.</strong> Агентство «Артекс» подберет Вам водителя в семью, личного водителя или водителя-телохранителя, с хорошей характеристикой и рекомендациями с предыдущих мест работы, подтверждением безаварийности, отличным знанием Санкт-Петербурга.
+							<img src="images/uzor-1.png" alt="uzor-1-4" class="img-responsive">
+						</li>
+						<li>
+							<strong>Сиделка.</strong> Профессиональные сиделки от агентства домашнего персонала в Санкт-Петербурге «Артекс» готовы обеспечить уход за больным и пожилым человеком на дому или в лечебных учреждениях. Опытные сиделки нашей компании оказывают патронажные услуги во всех областях медицины. График работы сиделки может различаться – от часа (или по количеству процедур), до подбора сиделки с проживанием с полным обслуживанием пожилого человека – стирка, уборка, готовка, медицинские процедуры, зарядка, прогулки.
+							<img src="images/uzor-1.png" alt="uzor-1-5" class="img-responsive">
+						</li><li>
+							<strong>Экспресс-персонал.</strong> Если Вам необходим домашний персонал не на долгий период, а всего на несколько часов, Вам идеально подойдет услуга «экспресс персонал для дома»: экспресс-няня на время отсутствия родителей дома, экспресс-домработница на разовой основе или экспресс-сиделка – на несколько часов, выходные или праздничные дни.
+							<img src="images/uzor-1.png" alt="uzor-1-6" class="img-responsive">
+						</li>
+						<li>
+							<strong>Домашний персонал в загородный дом.</strong> В последнее время, стала очень популярной услуга семейная пара в загородный дом с проживанием. Дело в том, что каждый из членов семьи выполняет обязанности нескольких специалистов. Так, например, женщина одновременно может выполнять обязанности няни, домработницы, повара. Мужчина, в свою очередь, может выполнять работу охранника, водителя, садовника. В то же время, услуги семейной пары в загородный дом стоят гораздо дешевле, чем услуги другого домашнего персонала.
+						</li>
+					</ul>
+					
+					<div class="four-angle-ornament">
+						<img class="top-left-ornament img-responsive" src="images/block-angle-left-top.png" alt="block-angle-left-top">
+						<img class="bottom-left-ornament img-responsive" src="images/block-angle-left-bottom.png" alt="block-angle-left-bottom">
+						<img class="top-right-ornament img-responsive" src="images/block-angle-right-top.png" alt="block-angle-right-top">
+						<img class="bottom-right-ornament img-responsive" src="images/block-angle-right-bottom.png" alt="block-angle-right-bottom">
+						
+						<img class="bottom-center-ornament hidden-xs img-responsive" src="images/block-angle-bottom-center.png" alt="block-angle-bottom-center">
+					</div>
+			</section>
+			
+		</div><!-- end main-bg-paper -->
+		
+	</div><!-- end main-bg -->
+		
+		<section id="bottom-menu">
+			<ul>
+				<li class="width-50-right"><a href="#">Оставить<br> заявку</a></li>
+				<li class="width-50-left"><a href="#">Обратный<br> звонок</a></li>				
+			</ul>
+			
+			<p>В любое время с радостью ответим на все Ваши впросы и примем заявку<br> на подбор домашнего персонала по телефонам:<br> 8 (812) 640-78-28, +7 (911) 210-04-44</p>
+		</section>
+
+	</main>
+	
+	<div id="pre-footer-dotted-line"></div>
+	<footer role="contentinfo">
+		<div class="row">
+			<div id="footer-articles" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h3>НАШИ СТАТЬИ:</h3>
+				<ul>
+					<li><a href="#">Домовые</a></li>
+					<li><a href="#">Подбор домашнего персонала</a></li>
+					<li><a href="#">Агентство Нянь</a></li>
+					<li><a href="#">Первый день работы няни в Вашей семье</a></li>
+					<li><a href="#">Все статьи</a></li>
+				</ul>
+			</div>
+			<div id="footer-news" class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<h3>Новости</h3>
+				<span>8 июля 2016 г.</span>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+			</div>
+		</div>
+		<!--<p id="copyright">Arteks © 2016 Все права защищены</p>-->
+		<!--<a href="#" id="made-in-greenpro">Сделано в GreenPro</a>-->
+	</footer>
+</div> 	<!-- end wrapper-->
+
+<!-- JS scripts -->
+		<script src="js/jquery-3.1.0.min.js"></script>		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slimbox2.js"></script>
+		<!--<script src="js/jquery.stellar.min.js"></script>-->
+		<!--<script src="js/parallax.min.js"></script>-->
+		<script src="js/owl-carousel/owl.carousel.js"></script>
+		<script src="js/scripts.js"></script>		
+		
+		<div id="toTop"><span class="glyphicon glyphicon-chevron-up"></span></div>	
+		<script type="text/javascript">ActiveLinks('main-menu');</script>
+		<script type="text/javascript">ActiveLinksPersonal('personal-block');</script>
+	
+	<!-- Yandex.Metrika counter -->
+    <!--<script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter27466176 = new Ya.Metrika({
+                        id:27466176,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+    
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+    
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/27466176" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+    <!-- /Yandex.Metrika counter -->
+	
+</body>
+</html>

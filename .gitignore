@@ -348,3 +348,49 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# ignore dirs
+fonts/
+webfonts/
+files/
+img/
+images/
+swipebox/
+maps/
+owl-carousel/
+
+# ignore files
+*.log
+*.sql
+*.sqlite
+*.txt
+*.zip
+*.rar
+*.jpg
+*.png
+*.jpeg
+*.ico
+*.gif
+*.xlx
+*.xlsx
+*.doc
+*.docx
+*.pdf
+*.xml
+*.pot
+*.min.css
+*.min.js
+*.map
+config.json
+animate.css
+flaticon.css
+lightbox.css
+lightbox.js
+bootstrap*
+slimbox2.*
+jquery*
+lightslider.*
+masked.js
+owl*
+unslider.*
+parallax*

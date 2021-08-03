@@ -1,0 +1,649 @@
+/*
+Файл стилей CSS лендинга дом на Гоголя
+25.06.2016
+*/
+
+/*
+	Сброс таблицы стилей
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Настройка основных блоков*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+header, nav, section, main, article, aside, footer 
+{
+	display: block;
+}
+
+header, nav, section, main, article, aside, footer, div, p, span, h1, h2, h3, h4, h5, h6, img, ul, li, a
+{
+	border: 0px #fff dotted;
+}
+
+/*подключаем шрифты*/
+@font-face {
+    font-family: 'Fregat';
+    src: local('Fregat'), url('../fonts/fregat/fregat.woff2') format('woff2'), url('../fonts/fregat/fregat.woff') format('woff'), url('../fonts/fregat/fregat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fregat-Italic';
+    src: local('Fregat Italic'), local('Fregat-Italic'), url('../fonts/fregat/fregatitalic.woff2') format('woff2'), url('../fonts/fregat/fregatitalic.woff') format('woff'), url('../fonts/fregat/fregatitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fregat-Bold';
+    src: local('Fregat Bold'), local('Fregat-Bold'), url('../fonts/fregat/fregatbold.woff2') format('woff2'), url('../fonts/fregat/fregatbold.woff') format('woff'), url('../fonts/fregat/fregatbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fregat-BoldItalic';
+    src: local('Fregat Bold Italic'), local('Fregat-BoldItalic'), url('../fonts/fregat/fregatbolditalic.woff2') format('woff2'), url('../fonts/fregat/fregatbolditalic.woff') format('woff'), url('../fonts/fregat/fregatbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Fira-Sans';
+    src: local('Fira Sans'), local('FiraSans-Regular'), url('../fonts/firasans/firasans.woff2') format('woff2'), url('../fonts/firasans/firasans.woff') format('woff'), url('../fonts/firasans/firasans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSans-Italic';
+    src: local('Fira Sans Italic'), local('FiraSans-Italic'), url('../fonts/firasans/firasansitalic.woff2') format('woff2'), url('../fonts/firasans/firasansitalic.woff') format('woff'), url('../fonts/firasans/firasansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: local('Fira Sans Medium'), local('FiraSans-Medium'), url('../fonts/firasans/firasansmedium.woff2') format('woff2'), url('../fonts/firasans/firasansmedium.woff') format('woff'), url('../fonts/firasans/firasansmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSans-SemiBold';
+    src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url('../fonts/firasans/firasanssemibold.woff2') format('woff2'), url('../fonts/firasans/firasanssemibold.woff') format('woff'), url('../fonts/firasans/firasanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: local('Fira Sans Bold'), local('FiraSans-Bold'), url('../fonts/firasans/firasansbold.woff2') format('woff2'), url('../fonts/firasans/firasansbold.woff') format('woff'), url('../fonts/firasans/firasansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+body
+{
+   background: transparent url("../images/bg-pattern.jpg") repeat fixed center top;
+   /*background-color: rgba(241,241,241,1);*/
+   font-family: Fira-Sans,Fregat,Helvetica,Arial,sans-serif;
+   font-size: medium;
+   font-weight: normal;
+   /*color:#000;*/
+   /*color:#303030;*/
+   color:#404040;
+}
+
+H1
+{
+   font-size:2em;
+   font-family: FiraSans-Medium;
+   padding: 1em;
+   text-align:center;
+   /*color:#fff;*/
+   /*color:#301010;*/
+   color:#FEFEFE;
+   background-color:#D8512B;
+}
+H2
+{
+   font-size:1.6em;
+   font-family: FiraSans-Medium;
+}
+H3
+{
+   font-size:1.4em;
+}
+H4
+{
+   font-size:1.2em;
+}
+a
+{
+   color: #5A99DC;
+   text-decoration: underline;
+}
+/*a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}*/
+a:hover
+{
+   /*color: #5A99DC;*/
+   text-decoration: underline;
+}
+
+/*Основной блок на всю ширину*/
+#wrapper
+{
+   /*max-width: 1280px;*/
+   margin: 0 auto;
+}
+/*Первый экран*/
+#first-screen
+{
+	background-color: rgba(255,255,255,0.99);
+	color:#404040;
+	border-bottom: 10px #9ECD34 solid;
+}
+
+.bg-white
+{
+	background-color: rgba(255,255,255,0.99);
+}
+
+#top
+{
+	background-color: rgba(65,101,139,1);
+	/*background-color: rgba(50,161,34,1);*/
+	padding:0.8em 0.5em 0.2em 0.5em;
+}
+#top img
+{
+	padding:0.7em;
+}
+#top-contacts
+{
+	float:right;
+	text-align:right;
+	padding:1em 0.5em 0.4em 0.5em;
+	color:#fff;
+}
+#top-contacts a
+{
+	color: #fff;
+}
+#top-contacts label
+{
+	color:#F5C519;
+	font-size:0.9em;
+	cursor:pointer;
+	margin:0 2em;
+	border-bottom: 1px #F5C519 dashed;
+}
+#phone-top
+{
+   font-size:2.5em;
+   padding:0.5em 0.5em 0 0.5em;
+}
+/*#region-top
+{
+   font-size:0.9em; 
+   color:#E69220;
+}*/
+#call-button-on-top-mobile
+{
+   float:right;
+   display:block;
+   position:relative;
+   margin:0 0em;
+   padding:0.5em 3em;
+   background-color: rgba(50,194,34,1);
+   color: #fff;
+   text-decoration:none;
+   font-size:1em;
+   text-align:center;
+   
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+#call-button-on-top-mobile:hover
+{
+   background-color: rgba(50,161,34,1);
+}
+/*#header
+{
+   
+}*/
+#header img
+{
+   padding-top: 0;
+}
+
+/*#text-on-first-screen
+{
+   display:block;
+   position:relative;
+   padding:1em;
+   background-color: rgba(76,68,60,0);
+   font-size:2em;
+   text-align:center;
+}*/
+.advantages
+{
+   color:#fff;
+   background-color: rgba(92,194,118,1);
+   font-size:1.5em;
+   text-align:center;
+   padding:1em;
+   border: 2px #fff solid;
+}
+.advantages p
+{
+   padding:1em;
+   line-height:1.3;
+   text-align:left;
+}
+.advantages a
+{
+   display:inline-block;
+   position:relative;
+   margin:1em 0;
+   padding:1em 1.5em;
+   /*background-color: rgba(0,174,240,1);*/
+   color: #fff;
+   text-decoration:none;
+   font-size:0.6em;
+   text-align:center;
+   border: 3px #fff solid;
+   
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   border-radius: 50px;
+}
+.advantages span
+{
+   font-family: Flaticon;
+}
+/*#text-on-first-screen
+{
+   color:#fff;
+   background-color: rgba(76,68,60,0);
+   font-size:2em;
+   text-align:center;
+}
+#text-on-first-screen p
+{
+   color:#fff;
+   padding:0.5em;
+   background-color: rgba(76,68,60,0);
+   
+   text-align:center;
+   border: 1px rgba(255,255,255,0.4) solid;
+}*/
+/*#text-on-first-screen p:first-child
+{
+   border-left: none;
+}*/
+/*
+#order-button-on-first-screen
+{
+   display:inline-block;
+   position:relative;
+   margin:3em 0;
+   padding:1em 3em;
+   background-color: rgba(0,174,240,1);
+   color: #fff;
+   text-decoration:none;
+   font-size:1.2em;
+   text-align:center;
+   
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+#order-button-on-first-screen:hover
+{
+   background-color: rgba(0,124,240,1);
+}
+*/
+.order-button-yellow
+{
+   float:left;
+   display:block;
+   position:relative;
+   margin:2em 0;
+   padding:1.2em 3em;
+   background-color: #FFBE00;
+   color: #fff;
+   text-decoration:underline;
+   font-size:1.3em;
+   text-align:center;
+   border-bottom: 5px #C0C0C0 solid;
+   border-right: 5px #C0C0C0 solid;
+   
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   border-radius: 50px;
+}
+.order-button-yellow:hover
+{
+   background-color: #FFAA00;
+   color: #fff;
+}
+.social-buttons
+{
+    text-align:center; 
+	padding:2em;
+}
+.social-buttons h4
+{
+	padding:0.5em;
+}
+#green-blocks
+{
+   margin-top:0em;
+}
+#offers
+{
+   margin-top:1em;
+   padding:2em;
+   font-size:1.2em;
+}
+#offers h2
+{
+   display:inline-block;
+   font-size:2em;
+   padding-bottom:0.2em;
+   border-bottom: 6px #9ECD34 solid;
+   margin-bottom:1em;
+}
+#offers span
+{
+   font-size:0.7em;
+   color:#fff;
+}
+#offers .off
+{
+   float:left;
+   font-size:2em;
+   padding:0.55em 0.5em;
+   border: 2px #fff solid;
+   margin-right:0.5em;
+   
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px; 
+   border-radius: 50px; 
+   
+   color:#fff;
+}
+#offers .offer
+{
+   font-size:1.2em;
+   padding:1em;
+   border: 10px #fff solid;
+   color:#fff;
+}
+#offers .green
+{
+   background-color: rgba(158,205,52,1);
+}
+#offers .blue
+{
+   background-color: rgba(86,197,255,1);
+}
+#offers .dark-blue
+{
+   background-color: rgba(86,156,227,1);
+}
+#offers .dark-green
+{
+   background-color: rgba(92,194,118,1);
+}
+#map
+{
+   margin-top:1em;
+   border: 15px #fff solid;
+}
+#tech
+{
+   margin-top:1em;
+   padding:2em;
+   font-size:1.2em;
+}
+#tech h2
+{
+   display:inline-block;
+   font-size:2em;
+   padding-bottom:0.2em;
+   border-bottom: 6px #9ECD34 solid;
+   margin-bottom:1em;
+}
+#tech ul
+{
+   margin-top:2em;
+   list-style-type:square;
+   color:#9ECD34;
+}
+#tech ul li
+{
+   line-height:1.5;
+   margin-left:2em;
+}
+#tech ul li span
+{
+   color:#404040;
+}
+
+#plans
+{
+   margin-top:1em;
+   padding:2em;
+   font-size:1.2em;
+}
+#plans h2
+{
+   display:inline-block;
+   font-size:2em;
+   padding-bottom:0.2em;
+   border-bottom: 6px #9ECD34 solid;
+   margin-bottom:0.5em;
+}
+#plans img
+{
+   padding:2em 1em;
+   border: 0px #9ECD34 dotted;
+}
+
+#chevron-down-button
+{
+   padding:0.1em 2em 0.5em 2em;
+   font-size:2.5em; 
+   color:#fff;
+   text-align:center;
+}
+#chevron-down-button a
+{
+   color:#fff;
+   padding:0.1em;
+}
+/*меню*/
+/*#main-menu
+{   
+	display: block;
+	position:relative;
+	padding:1em 1em 1em 3em;
+}
+#main-menu li
+{
+   display: inline-block;
+}
+#main-menu span
+{   
+	color: rgba(248,148,29,1);
+	font-size:0.8em;
+}
+#main-menu a
+{
+   display: block;
+   text-align:center;
+   padding:1em 0.5em;
+   color:#fff;
+   text-decoration: underline;
+}
+
+#main-menu li:hover a, #main-menu a:hover, #main-menu .active_menu
+{
+	color: #fff;
+	text-decoration: none;
+}
+*/
+/*Основной блок main*/
+
+main[role="main"]
+{
+   width: 100%;
+   /*background: transparent url("../images/body.jpg") repeat-x fixed center top;*/
+   padding:0em;
+}
+
+
+/*Футер*/
+footer[role="contentinfo"] 
+{
+	clear: both;
+	margin-top:1em;
+	padding:1em 0;
+	/*background-color: rgba(47,71,156,1);
+	background-color: rgba(55,36,0,1);*/
+	/*background-color: rgba(76,68,60,1);*/
+	background-color:#303030;
+}
+.footer-block
+{
+   color:#fff;
+}
+.footer-block h3
+{
+   color:#E69220;
+   padding:1em 0;
+}
+.footer-block ul li
+{
+   padding:0.2em 0;
+}
+#copyright
+{
+   color:#fff;
+   font-size:0.8em;
+   text-align:center;
+   margin-top:1em;
+   padding:1em;
+   /*border-top: 1px #EEE1BE dotted;*/
+}
+#made-in-greenpro
+{
+   display:block;
+   font-size:0.7em;
+   text-align:center;
+   padding-bottom:1em;
+}
+
+/*Кнопка Наверх*/
+#toTop 
+{
+	width:2.5em;
+	/*background-color:#303030;*/
+	background-color: rgba(76,68,60,0.7);
+	text-align:center;
+	padding:0.65em 0.2em;
+	position:fixed;
+	bottom:0.7em;
+	right:1em;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+	font-size:1.5em;
+	
+	-webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+}
+#toTop:hover
+{
+	/*background-color: rgba(17,49,97,0.6);*/
+	background-color: rgba(76,68,60,0.6);
+}
+
+/*медиа-запросы*/
+@media screen and (max-width:767px)
+{
+	body
+	{
+	   font-size: small;
+	}
+}
+
+@media screen and (max-width:479px)
+{
+	body
+	{
+	   font-size: x-small;
+	}
+}

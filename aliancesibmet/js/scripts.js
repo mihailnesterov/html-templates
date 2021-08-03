@@ -1,0 +1,96 @@
+/*
+ * Java-скрипты
+ */
+
+	/* toTop Button */
+	
+		$(function() { 
+			$(window).scroll(function() { 
+			if($(this).scrollTop() != 0) { 
+				$('#toTop').fadeIn(); 
+					} else {	 
+						$('#toTop').fadeOut(); 
+					}	 
+				}); 
+				$('#toTop').click(function() { 
+				$('body,html').animate({scrollTop:0},800); 
+			}); 
+		});
+	
+	
+	/*Fix menu */
+	
+	$(document).ready(function(){
+	        var $menu = $("#menu-on-main");
+	        $(window).scroll(function(){
+	            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+	                $menu.removeClass("default").addClass("fixed");
+	            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+	                $menu.removeClass("fixed").addClass("default");
+			}
+		});//scroll
+	});
+	
+	/*scroll to anchor */
+	$(document).ready(function() {
+		$("a.scrolling-links").click(function () {
+		  var elementClick = $(this).attr("href");
+		  var destination = $(elementClick).offset().top-50;
+		  $('html,body').animate( { scrollTop: destination }, 1100 );
+		  return false;
+		});
+	});
+	
+	/* active-menu */
+		function ActiveLinks(id){
+			try{
+				var el=document.getElementById(id).getElementsByTagName('a');
+					var url=document.location.href;
+					for(var i=0;i<el.length; i++){
+					if (url==el[i].href){
+					el[i].className = 'active_menu';
+					};
+				};
+			}
+			catch(e){}
+			};
+
+	
+	/* slimbox2 */
+		$(document).ready(function(){
+			$('a.slimbox').slimbox({
+			counterText: "Изображение {x} из {y}"
+			});
+		});
+		
+	/* stellar parallax */		
+		$(document).ready(function(){
+			$('#first-screen').stellar({
+			  verticalScrolling: true,
+			  responsive: true
+			});
+		});
+		
+		/* callback-top */
+
+    	$(document).ready(function() {
+    		$('label#callback-top').click( function(event){
+    			event.preventDefault();
+    			$('.overlay').fadeIn(400,
+    				function(){
+    					$('#modal_form') 
+    						.css('display', 'block')
+    						.animate({opacity: 1, top: '50%'}, 200);
+    			});
+    		});
+    		$('#modal_close, .overlay').click( function(){
+    			
+    			$('#modal_form')
+    				.animate({opacity: 0, top: '45%'}, 200,
+    					function(){
+    						$(this).css('display', 'none');
+    						$('.overlay').fadeOut(400);
+    					}
+    				);
+    		});
+    	});

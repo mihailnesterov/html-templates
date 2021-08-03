@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Карточка товара | Medgrade</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome CSS -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <!-- animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-med-green shadow header-fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-white py-1">
+                            <p class="my-2">МОСКВА | <a href="tel:+78005503960" class="text-white">8 800 550 39 60</a></p>
+                        </div> <!-- ./ col -->
+                        <div class="col-12 col-md-4 text-center text-white py-1">
+                            <p class="my-2">САНКТ-ПЕТЕРБУРГ | <a href="tel:+781290569" class="text-white">8 (812) 905 69</a></p class="my-2">
+                        </div> <!-- ./ col -->
+                        <div class="col-12 col-md-3 text-center text-white py-1">
+                            <p class="my-2">ЧЕБОКСАРЫ | <a href="tel:+78352203245" class="text-white">8 (8352) 203-245</a></p>
+                        </div> <!-- ./ col -->
+                        <div class="d-none d-md-block col-1 text-center text-white py-1">
+                            <img src="images/star.png"  width="25" alt="star" class="img-fluid mt-1">
+                        </div> <!-- ./ col -->
+                    </div> <!-- ./ row -->
+                </div> <!-- ./ container -->
+            </div> <!-- ./ col-12 & header-fixed-top -->
+        </div> <!-- ./ row -->
+
+        <nav class="d-md-none navbar navbar-expand-md fixed-top bg-white text-med-green border-bottom border-bottom-radius-20 shadow py-3">
+            <a class="navbar-brand text-med-green" href="#"><img src="images/logo-mobile.png"  alt="logo-mobile" width="40" class="img-fluid p-1 align-middle mr-2"><span class="d-inline-block align-middle mt-1">MEDGRADE<br><span class="text-med-size-0-6 text-med-gray">медицинское оборудование</span></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars text-med-green"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse p-3 mt-3" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green border-top text-uppercase text-left py-2" href="#">
+                        <img src="images/uzi.png" alt="Узи оборудование" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                            Узи оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green text-uppercase text-left py-2" href="#">
+                        <img src="images/endoskopiya.png" alt="Эндоскопия" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                        Эндоскопия
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green text-uppercase text-left py-2" href="#">
+                        <img src="images/reanimaciya.png" alt="Реанимация" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                        Реанимация
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green text-uppercase text-left py-2" href="#">
+                        <img src="images/hirurgiya.png" alt="Хирургическое оборудование" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                        Хирургическое оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green text-uppercase text-left py-2" href="#">
+                        <img src="images/lor.png" alt="Лор оборудование" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                        Лор оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green text-uppercase text-left py-2" href="#">
+                        <img src="images/tomograph.png" alt="Томографы" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                        Томографы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green border-bottom text-uppercase text-left py-2" href="#">
+                        <img src="images/rentgen.png" alt="Рентгены" class="img-fluid img-height-40 p-1 align-middle mr-2">
+                        Рентгены
+                        </a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link text-med-green py-2 text-uppercase" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green py-2 text-uppercase" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-med-green py-2 text-uppercase" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="row border-left border-right border-bottom p-3 pt-4 border-bottom-radius-20 shadow-sm bg-white mt-md-5">
+            <div class="d-none d-md-block col-md-3">
+                <a href="#"><img src="images/logo.png"  alt="logo" class="img-fluid p-2"></a>
+            </div>  <!-- ./ col-3 -->
+            <div class="col-12 col-md-9">
+                <form id="search-form" class="text-right p-2">
+                    <div class="input-group m-0">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-white px-3 border-left-radius-10">
+                                <img src="images/search.png" width="25" alt="search" class="img-fluid">
+                            </div>
+                        </div>
+                        <input type="search" class="form-control form-control-lg border-left-0 border-right-0 text-med-gray" id="searchInput" placeholder="Поиск медицинского оборудования по ключевым словам">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-white border-left-0 pl-3 border-right-radius-10">
+                                <button type="submit" class="border-top-0 border-bottom-0 border-right-0 pl-3 bg-white text-med-green">НАЙТИ</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <nav id="main-menu" class="d-none d-md-block my-3">
+                    <ul class="nav nav-justified">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link border border-top-0 border-bottom-radius-10 shadow-sm dropdown-toggle active" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars text-med-green mt-1 mr-2 float-left"></i>Каталог</a>
+                            <div class="dropdown-menu border-radius-20 border shadow-sm py-2 px-3 mt-3">
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/uzi.png" alt="Узи оборудование" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Узи оборудование
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/endoskopiya.png" alt="Эндоскопия" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Эндоскопия
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/reanimaciya.png" alt="Реанимация" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Реанимация
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/hirurgiya.png" alt="Хирургическое оборудование" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Хирургическое оборудование
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/lor.png" alt="Лор оборудование" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Лор оборудование
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/tomograph.png" alt="Томографы" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Томографы
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-left" href="#">
+                                    <img src="images/rentgen.png" alt="Рентгены" class="img-fluid img-height-60 p-2 align-middle mr-2">
+                                    Рентгены
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link border border-top-0 border-bottom-radius-10 shadow-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                            <div class="dropdown-menu border-radius-20 border shadow-sm p-3 mt-3 w-25">
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Оплата
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Рассрочка
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Лизинг
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    TRADE-IN
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Доставка
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link border border-top-0 border-bottom-radius-10 shadow-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Информация</a>
+                            <div class="dropdown-menu border-radius-20 border shadow-sm p-3 mt-3 w-25">
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    О компании
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Отзывы
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Новости
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link border border-top-0 border-bottom-radius-10 shadow-sm dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Контакты</a>
+                            <div class="dropdown-menu border-radius-20 border shadow-sm p-3 mt-3 w-25">
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Москва
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Санкт-Петербург
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-med-green text-uppercase text-center" href="#">
+                                    Чебоксары
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>  <!-- ./ col-3 -->
+        </div> <!-- ./ row -->
+        
+    </header> <!-- ./ header -->
+
+        
+    <!-- Page Content -->
+    <div class="page-content container-fluid animated fadeIn mb-5">
+
+        <div class="row product mt-5 mb-5 p-4">
+            <div class="col-12 mb-5">
+                <a href="#" class="text-med-green">Главная</a> /
+                <a href="#" class="text-med-gray">Реанимация</a>
+            </div>
+            <div class="col-12 mb-5">
+                <h1 class="text-med-green text-uppercase">НАРКОЗНЫЙ АППАРАТ MINDRAY WATO EX-65 NEW</h1>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="images/product-2.png" alt="" class="img-fluid p-4 border-radius-20 border">
+                <div class="row mt-4">
+                    <div class="col-6 col-md-3 mb-3">
+                        <img src="images/product-1.jpg" alt="" class="img-fluid p-2 border-radius-20 border">
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <img src="images/product-2.png" alt="" class="img-fluid p-2 border-radius-20 border">
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <img src="images/product-1.jpg" alt="" class="img-fluid p-2 border-radius-20 border">
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <img src="images/product-2.png" alt="" class="img-fluid p-2 border-radius-20 border">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 p-3 p-md-5">
+                <div class="row pl-md-5">
+                    <div class="col-12 col-md-3 mb-5 d-none d-md-block">
+                        <div class="d-inline-block align-middle mr-3">
+                            <i class="far fa-check-square fa-2x text-med-green"></i>
+                        </div>
+                        <div class="d-inline-block align-middle pt-1">
+                            <h3 class="font-thin" style="font-size: 1.4em;">ВЫСОКИЙ</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 mb-5 d-none d-md-block">
+                        <div class="d-inline-block align-middle mr-3">
+                            <i class="far fa-check-square fa-2x text-med-green"></i>
+                        </div>
+                        <div class="d-inline-block align-middle">
+                            <h3 class="font-thin" style="font-size: 1.4em;">ДОСТАВКА ПО ВСЕЙ РОССИИ</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5 d-none d-md-block">
+                        <div class="d-inline-block align-middle mr-3">
+                            <i class="far fa-check-square fa-2x text-med-green"></i>
+                        </div>
+                        <div class="d-inline-block align-middle">
+                            <h3 class="font-thin" style="font-size: 1.4em;">ГАРАНТИЯ</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 mb-5 d-none d-md-block">
+                        <div class="d-inline-block align-middle mr-3">
+                            <i class="far fa-check-square fa-2x text-med-green"></i>
+                        </div>
+                        <div class="d-inline-block align-middle">
+                            <h3 class="font-thin" style="font-size: 1.4em;">ВЫГОДНЫЕ ЛИЗИНГОВЫЕ УСЛОВИЯ</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-5 d-none d-md-block">
+                        <div class="d-inline-block align-middle mr-3">
+                            <i class="far fa-check-square fa-2x text-med-green"></i>
+                        </div>
+                        <div class="d-inline-block align-middle">
+                            <h3 class="font-thin" style="font-size: 1.4em;"> ПОД ЗАКАЗ</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 mb-5 d-none d-md-block">
+                        <div class="d-inline-block align-middle mr-3">
+                            <i class="far fa-check-square fa-2x text-med-green"></i>
+                        </div>
+                        <div class="d-inline-block align-middle">
+                            <h3 class="font-thin" style="font-size: 1.4em;">ВВОД В ЭКСПЛУАТАЦИЮ И ОБУЧЕНИЕ ПЕРСОНАЛА</h3>
+                        </div>
+                    </div>
+                </div> <!-- ./ row -->
+
+                <div class="row pl-md-5">
+                    <div class="col-12 col-md-3 mt-5 p-3">
+                        <div class="bg-med-green border-radius-20 shadow-sm text-center">
+                            <div class="bg-white border-radius-20 border-med-green p-4 px-3">
+                                <h3 class="font-thin text-uppercase" style="font-size: 1.6em;">Цена по запросу</h3>
+                            </div>
+                            <div class="p-4 text-white">
+                                <h4>
+                                    <a href="#" class="font-thin text-uppercase text-white" style="font-size: 1.1em;">Узнать стоимость</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-5 p-3">
+                        <div class="border-radius-20 border shadow-sm p-4">
+                            <form id="one-click-order-form" method="POST" action="">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control form-control-lg text-med-gray" id="one-click-order-input" placeholder="Введите номер телефона..." required />
+                                    <button type="submit" class="btn btn-med-green-search btn-lg px-4" id="one-click-order-submit-btn" ><span class="d-none d-md-inline">Получить</span> КП</button>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-1">
+                                        <i class="far fa-check-square fa-2x text-med-green"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="input-group form-check"> 
+                                            <input type="checkbox" class="form-check-input d-none" id="form-privacy" checked />
+                                            <label for="form-privacy" class="form-check-label">
+                                                <span>Согласен на обработку персональных данных в соответствии с <a href="/privacy" target="_blank" class="text-med-green">Политикой конфиденциальности</a>.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- ./ row -->
+            </div>
+            <div class="col-12 mt-5 mb-4">
+                <h2 class="text-med-green text-uppercase">Описание</h2>
+            </div>
+            <div class="col-12 mb-5">
+                <div class="border-radius-20 border shadow-sm p-4 p-md-5 text-med-size-1-4">
+                    <p>Универсальный наркозный аппарат нового поколения, позволяющий работать с пациентами любой категории: новорожденные, дети, подростки и взрослые пациенты.</p>
+                </div>
+                
+            </div>
+            <div class="col-12 mb-4">
+                <h2 class="text-med-green text-uppercase">ОСНОВНЫЕ ХАРАКТЕРИСТИКИ WATO EX-65 NEW:</h2>
+            </div>
+            <div class="col-12">
+                <div class="tabs border-radius-30 border-0 shadow-sm bg-med-green">
+                    <div class="tab-content border-radius-20 border p-4 p-md-5 bg-white">
+                        <h3 class="mt-3 mb-4">Базовая стойка, включает:</h3>
+                        <ul>
+                            <li>Цветной сенсорный дисплей диагональю 12.1 дюймов</li>
+                            <li>Анестезиологический вентилятор с дыхательным объёмом (TV) 20-1500 мл в режиме VCV</li>
+                            <li>Управляемые тревоги</li>
+                            <li>Электронные флоуметры с защитой от гипоксии</li>
+                            <li>Модуль расширения</li>
+                            <li>Складывающаяся рабочая поверхность анестезиолога</li>
+                        </ul>
+                    </div>
+                    <div class="p-3 text-center">
+                        <p><a href="#" class="text-white text-med-size-1-2 text-uppercase">(28) Развернуть</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./ row -->
+
+        <div class="row bg-med-gray">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row text-center py-5">
+                        <div class="col-12 col-md-3 mb-2">
+                            <h4 class="text-med-green text-uppercase mt-2">Уже определились?</h4>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2">
+                            <h4 class="text-white text-uppercase">ОСТАВЬТЕ ЗАПРОС НА КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ!</h4>
+                            <p class="text-white">Наши менеджеры свяжуться с Вами в близжайшее время</p>
+                        </div>
+                        <div class="col-12 col-md-3 mb-2">
+                            <button class="btn btn-med-green btn-lg px-5">Получить КП</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="equipments-block text-center py-2">
+                    <div class="equipment-inline-group border-radius-20 border shadow-sm">
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/uzi.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Узи оборудование
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="equipment-v-divider"></div>
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/endoskopiya.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Эндоскопия
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="equipment-v-divider"></div>
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/reanimaciya.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Реанимация
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="equipment-v-divider"></div>
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/hirurgiya.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Хирургическое оборудование
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="equipment-v-divider"></div>
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/lor.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Лор оборудование
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="equipment-v-divider"></div>
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/tomograph.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Томографы
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="equipment-v-divider"></div>
+                        <div class="equipment-card">
+                            <a href="#">
+                                <img src="images/rentgen.png" alt="" class="img-fluid img-small">
+                                <h4 class="text-med-green text-uppercase">
+                                    Рентгены
+                                </h4>
+                            </a>
+                        </div>
+                    </div>  <!-- ./ equipment-inline-group -->
+                </div>  <!-- ./ equipments-block -->
+            </div> <!-- ./ col-12 -->
+        </div> <!-- ./ row -->
+
+        <div class="row bg-med-gray">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row text-center py-4">
+                        <div class="col-md-3">
+                            <h4 class="text-med-green text-uppercase">Получайте лучшие предложения в нашей рассылке</h4>
+                        </div>
+                        <div class="col-md-9 pt-3">
+                            <form id="subscribe-form">
+                                <div class="form-row">
+                                    <div class="col-12 col-md-8 mb-2">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-lg text-med-gray" id="subscribeInput" placeholder="Ваш e-mail" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <button type="submit" class="btn btn-med-green btn-lg px-4">Подписаться на рассылку</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./ page-content && container-fluid -->
+    <!-- ./Page Content -->
+
+    <!-- Footer -->
+    <footer class="py-5 text-med-green">
+        
+        <div class="container-fluid py-4 bg-med-green shadow mb-4"></div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 footer-block">
+                    <h4 class="text-med-green mb-3">Информация</h4>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Наши достоинста</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer-block">
+                    <h4 class="text-med-green mb-3">Услуги</h4>
+                    <ul>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Рассрочка</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                        <li><a href="#">Trade-IN</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 footer-block">
+                    <h4 class="text-med-green mb-3">ООО "МЕДГРЕЙД"</h4>
+                    <p>ИНН 9718078779</p>
+                    <p>ОГРН 5177746066218</p>
+                    <p>Юридический адрес:</p>
+                    <p>105122, г. Москва, Щёлковское шоссе д.5 стр.1 офис 619</p>
+                </div>
+                <div class="col-12 col-md-3 footer-block text-center">
+                    <h4 class="text-med-green mb-3">Контакты</h4>
+                    <p><a href="tel:+78005503960">8 800 550 39 60</a></p>
+                    <p><a href="mailto:info@medgrade.pro">info@medgrade.pro</a></p>
+                    <div class="my-3">
+                        <ul class="social-buttons">
+                            <li><a href="tel:+78005503960" title="Позвонить нам"><img src="images/phone.png" alt="Позвонить нам" class="img-fluid"></a></li>
+                            <li><a href="mailto:info@medgrade.pro" title="Написать нам письмо"><img src="images/email.png" alt="Написать нам письмо" class="img-fluid"></a></li>
+                            <li><a href="#" target="_blank" title="Мы в Instagram"><img src="images/instagram.png" alt="Мы в Instagram" class="img-fluid"></a></li>
+                            <li><a href="#" target="_blank" title="Наша страница в Facebook"><img src="images/facebook.png" alt="Наша страница в Facebook" class="img-fluid"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="copyright" class="col-12 text-center mt-4">
+                    <p class="m-0 mb-1">
+                        &copy; 2019 <a href="https://medgrade.pro/" class="text-med-green mx-2 text-med-underlined">MEDGRADE</a>
+                        Медицинское оборудование
+                    </p>
+                    <p class="m-0 small"><a href="/privacy">Положение об обработке персональных данных</a></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- toTop button -->
+    <div id="toTop"><i class="fa fa-chevron-up"></i></div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
