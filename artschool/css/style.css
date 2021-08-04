@@ -1,0 +1,320 @@
+/*
+	Сброс таблицы стилей, взято из:
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Настройка основных блоков*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+header, nav, section, main, article, aside, footer 
+{
+	display: block;
+}
+
+/* temp ---------------------- */
+/*.container, .container-fluid {
+	border: 0px red solid;
+}
+div, header, main, footer, aside, ul, nav {
+	border: 0px green solid;
+}*/
+
+/*html {
+    font-size: 16px;
+}*/
+
+/*
+
+em - % от font-size: в body
+rem - % font-size: в html
+
+*/
+
+
+/* default ---------------------- */
+body {
+   /*font-family: 'Roboto Condensed', Helvetica, Verdana, Arial, sans-serif;*/
+   font-family: 'Montserrat', Helvetica, Verdana, Arial, sans-serif;
+   font-size: 16px; /* 14px low high */
+   font-weight: normal;
+   /*letter-spacing: 1px;  */
+   color: #808080;
+   /*line-height: 26px;*/
+   line-height: 1.6;
+   background-color: #ccc;
+}
+
+h1,h2,h3,h4 {
+	/*font-family: 'Open Sans',sans-serif;*/
+	/*font-weight: 600;*/
+	color: #222;
+	/*text-transform: uppercase;*/
+}
+
+h1 {
+   font-size:1.8em;
+   text-transform: uppercase;
+}
+h2 {
+   font-size:1.5em;
+   text-transform: uppercase;
+}
+h3 {
+   font-size:1.3em;
+}
+h4 {
+   font-size:1.2em;
+}
+a {
+   color: #5A99DC;
+   text-decoration: none;
+   transition: .3s;
+}
+a:hover {
+   text-decoration: underline;
+}
+
+#wrapper {
+	background-color: #ffffff;
+}
+
+#main-menu-container {
+  /*margin: 0 auto;
+  max-width: 1200px;*/
+  border-bottom: 4px #f7f7f7 solid;
+  background-color: #fff !important;
+}
+/* swiper slider customization */
+.swiper-pagination-bullet {
+	padding: 0.5em;
+	margin: 0.5em;
+}
+.swiper-pagination-bullet-active {
+	background-color:#25be39;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	background-image: none;
+	color:#25be39;
+}
+/*.navbar-brand1 {
+	width: 80%;
+}
+.navbar-brand1 img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+}
+.navbar-brand1 span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 85%;
+}*/
+
+/*#banner-on-main {
+  background: url('../images/banner2.png') no-repeat center center;
+  height: 500px;
+  width: 100%;
+}*/
+
+.course-block {
+  border: 1px #f0f0f0 solid;
+}
+.course-block:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+.course-block img {
+  object-fit: cover;
+  height: 300px;
+}
+/*#logo {
+    width: 100px;
+}*/
+
+/* from old... */
+
+.content {    /* внешнийблок с контентом */
+	border: 1px #E6EFF2 solid;
+	margin: 2em 0;
+	padding: 1em 2em;
+	
+}
+.content img {
+	/*border: 1px #E6EFF2 solid;
+	background-color: #eee;
+	padding: 0.3em;*/
+	margin-bottom: 1em;
+}
+.content header {
+	border-bottom: 1px #E6EFF2 solid;
+	margin-bottom: 2em;
+}
+.content h3 i {
+	margin-right: 0.5em;
+	font-weight: 700;
+	/*color: #700580;*/
+}
+.content ul {
+	list-style-type: square;
+	margin: 1em 0 1em 1.5em;
+}
+.content ul li {
+	/*color: #700580;*/
+	line-height: 1.5em;
+}
+/*.content ul li span {
+	color: #4C4C4C;
+}*/
+.content table {
+	margin: 2em 0;
+}
+.content table th {
+	font-weight: 700;
+	/*background-color: #21A397;*/
+	/*color: #fff;*/
+}
+.prepod-block {
+	border: 1px #E6EFF2 solid;
+}
+.prepod-block h4 {
+	height: 60px;
+}
+.prepod-block b {
+	font-weight: 600;
+}
+.shedule-block {
+	margin: 1em;
+	border: 1px #eee solid;
+	background-color: #fff;
+}
+.card {
+	background-color: #f8f8f8;
+}
+.ul-m {
+    list-style-type: square;
+    margin-left: 1em;
+}
+footer {
+	background-color: #2F4149;
+	padding: 2em 1em;
+	color: #d9d9d9;
+}
+footer .footer-menu h4 {
+  margin-bottom: 0.5em;
+  color: #d9d9d9;
+}
+footer .footer-menu ul li {
+	line-height: 1.9em;
+}
+footer .footer-menu ul li a {
+	color: #bbb;
+	text-decoration: none;
+}
+footer .footer-menu ul li a:hover {
+	text-decoration: underline;
+}
+footer .footer-menu ul li i {
+	width: 20px;
+	text-align: center;
+	margin-right: 0.5em;
+	color: #76C11C;
+/*	color: #21A397;*/
+}
+footer .footer-bottom  {
+	margin-top: 2em;
+	padding-top: 1em;
+}
+
+/* media */
+
+@media (max-width: 543px) {
+    /*#search input {
+            max-width: 180px;
+    }*/
+    #logo {
+        width: 80px;
+	}
+	
+}
+
+@media (min-width: 544px) {
+  /*.container {
+    max-width: 576px;
+  }*/
+}
+
+@media (min-width: 768px) {
+  /*.container {
+    max-width: 720px;
+  }*/
+    #logo {
+        width: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+  /*.container {
+    max-width: 940px;
+  }*/
+}
+
+@media (min-width: 1200px) {
+  /*.container {*/
+    /*max-width: 1140px;*/
+	/*max-width: 1479px;*/
+	/*width: 1230px;
+	max-width: 100%;*/
+ /* }*/
+}

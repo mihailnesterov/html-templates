@@ -358,6 +358,8 @@ images/
 swipebox/
 maps/
 owl-carousel/
+tmp/
+temp/
 
 # ignore files
 *.log
@@ -386,6 +388,9 @@ animate.css
 flaticon.css
 lightbox.css
 lightbox.js
+slider-pro.css
+ntheverything.js
+slider.js
 bootstrap*
 slimbox2.*
 jquery*

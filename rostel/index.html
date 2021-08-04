@@ -417,34 +417,6 @@
     <!-- support button -->
     <div id="support-button"></div>
 
-    <?php 
-    if (isset($_POST['support-modal-btn'])) {
-
-        $name = $_POST['support-modal-name'];
-        $email = $_POST['support-modal-email'];
-        $msg = $_POST['support-modal-message'];
-        
-        $mail_to = 'mk@rostell.ru,realty2020@mail.ru,mhause@mail.ru';
-        $headers = array(
-            'From: rostell.ru <info@rostell.ru>',
-            'Content-type: text/html; charset=utf-8',
-        );
-
-        $theme = 'Заявка с сайта rostell.ru';
-        $message='
-          <h3>Получена заявка с сайта rostell.ru:</h3>
-          <div style="margin:15px 0;padding:20px;border:1px #f2f2f2 solid;">
-          <p>Имя: <b>'.$name.'</b></p>
-          <p>E-mail: <b>'.$email.'</b></p>
-          <p>Сообщение: <b>'.$msg.'</b></p>
-          </div>
-          ';
-        
-        mail($mail_to, $theme, $message, $headers);
-        //echo '<script>location.replace("'."/thankyou".'");</script>';
-    }
-    ?>
-
     <!-- JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
