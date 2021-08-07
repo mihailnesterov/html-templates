@@ -19,3 +19,5 @@ https://oktell-lp-05-2020.surge.sh
 https://rostel.surge.sh
 ## engineering company
 https://miafa.surge.sh
+## education company
+https://itsecurity.surge.sh
