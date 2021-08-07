@@ -15,5 +15,5 @@ https://vardom.surge.sh
 https://oktell-lp-04-2020.surge.sh
 ## telecom company #2
 https://oktell-lp-05-2020.surge.sh
-## ingeneering company
+## engineering company
 https://miafa.surge.sh
