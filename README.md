@@ -11,3 +11,7 @@ https://elfido-gogol.surge.sh
 https://indecor.surge.sh
 ## domestic recruiting agency
 https://vardom.surge.sh
+## telecom company #1
+https://oktell-lp-04-2020.surge.sh
+## telecom company #2
+https://oktell-lp-05-2020.surge.sh
