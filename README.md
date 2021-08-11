@@ -27,3 +27,5 @@ https://itsecurity.surge.sh
 https://colors-art.surge.sh/
 ## city service
 https://clearcity.surge.sh/
+## furniture company
+https://lagos.surge.sh/
