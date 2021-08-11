@@ -72,16 +72,6 @@ header, nav, section, main, article, aside, footer, div, p, span, h1, h2, h3, h4
 	border: 0px #000 dotted;
 }
 
-/*подключаем шрифты*/
-
-/*
-@font-face {
-    font-family: 'Fira-Sans';
-    src: local('Fira Sans'), local('FiraSans-Regular'), url('../fonts/firasans/firasans.woff2') format('woff2'), url('../fonts/firasans/firasans.woff') format('woff'), url('../fonts/firasans/firasans.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}*/
-
 /*istok*/
 @font-face {
     font-family: 'Istok';
@@ -111,9 +101,7 @@ header, nav, section, main, article, aside, footer, div, p, span, h1, h2, h3, h4
 
 body
 {
-   /*background: transparent url("../images/bg-pattern.jpg") repeat-x fixed center top;*/
    background-color: rgba(255,255,255,1);
-   /*font-family: Helvetica,Arial,sans-serif;*/
    font-family: Istok,Helvetica,Arial,sans-serif;
    font-size: medium;
    font-weight: normal;
@@ -145,14 +133,6 @@ a
    color: #5A99DC;
    text-decoration: underline;
 }
-/*a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
-}*/
 a:hover
 {
    /*color: #5A99DC;*/
@@ -162,51 +142,9 @@ a:hover
 /*Основной блок на всю ширину*/
 #wrapper
 {
-   /*max-width: 1280px;*/
    margin: 0 auto;
 }
 
-/*меню*/
-/*#main-menu
-{   
-	display: block;
-	position:relative;
-	padding:1em 1em 1em 3em;
-}
-#main-menu li
-{
-   display: inline-block;
-}
-#main-menu a
-{
-   display: block;
-   text-align:center;
-   padding:1em 0.5em;
-   color:#000;
-   text-decoration: none;
-   
-	line-height: 1.3;
-    cursor: pointer;
-}
-#main-menu a:after {
-	display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: #000;
-	background-color:#000;
-    transition: width .3s ease-in-out;
-}
-#main-menu li:hover a, #main-menu a:hover, #main-menu .active_menu
-{
-	text-decoration: none;
-}
-#main-menu a:hover:after, #main-menu a:focus:after
-{
-	text-decoration: none;
-	width: 100%;
-}
-*/
 /*Полоса елочка вершиной вниз*/
 .elka-down
 {
@@ -365,10 +303,7 @@ main[role="main"]
 footer[role="contentinfo"] 
 {
 	clear: both;
-	margin-top:0;
-	/*padding:1em 0;
-	background: transparent url("../images/footer-bg.png") repeat;*/
-	
+	margin-top:0;	
 	background-color: rgba(81,21,0,1);
 	color:#E1D2A8;
 	padding:0 0 0.5em 0;
@@ -431,7 +366,6 @@ footer[role="contentinfo"]
    text-align:center;
    margin-top:3em;
    padding:1em;
-   /*border-top: 1px #EEE1BE dotted;*/
 }
 #made-in-greenpro
 {

@@ -29,3 +29,5 @@ https://colors-art.surge.sh/
 https://clearcity.surge.sh/
 ## furniture company
 https://lagos.surge.sh/
+## manufacturer of natural jam
+https://lakomy-kray.surge.sh
