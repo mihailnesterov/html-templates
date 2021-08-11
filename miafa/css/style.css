@@ -351,10 +351,6 @@ main[role="main"]
 	color:#000;
 }
 
-/*header
-{
-   background: transparent url("../images/main-picture.png") no-repeat top center;
-}*/
 #header-main-page
 {
    background: transparent url("../images/main-picture.png") no-repeat top center;
@@ -441,7 +437,7 @@ main[role="main"]
 {
 	float:left;  
 	width:50%; 
-	background: url("../images/oval1.png") no-repeat center center;
+	background: url("../images/oval.png") no-repeat center center;
 }
 #pouzavame #oval-block p
 {
