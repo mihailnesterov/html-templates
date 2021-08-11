@@ -21,3 +21,5 @@ https://rostel.surge.sh
 https://miafa.surge.sh
 ## education company
 https://itsecurity.surge.sh
+## art school
+https://colors-art.surge.sh/
