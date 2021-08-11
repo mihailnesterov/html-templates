@@ -55,13 +55,7 @@
 			catch(e){}
 			};
 
-	
-	/* slimbox2 */
-		$(document).ready(function(){
-			$('a.slimbox').slimbox({
-			counterText: "Изображение {x} из {y}"
-			});
-		});
+
 	
 	/* swiper slider */
 	$(document).ready(function () {
